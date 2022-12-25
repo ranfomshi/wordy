@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html onload="setNames()">
+
+<head>
+    <link rel="stylesheet" href="wordy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&family=Zen+Dots&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="animations.js" defer></script>
+    <script src="wordy.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <title>Wordy</title>
+</head>
+
+<body onload="init()" onkeydown="enter(event)">
+    <div id="snackbar">Some text some message..</div>
+
+    <h1 class="pageTitle">Wordy</h1>
+
+    <h3>Today's word:</h3>
+    <div class="todayWordContainer">
+        <h2 class="todayWord" id="todayWord"></h2>
+    </div>
+
+    <p>Change a letter of <b class="replace"></b> to make a new word</p>
+    <input id="change" type="text" value=""><span id="wrongChange" class="material-symbols-outlined red">
+        cancel
+        </span><span id="correctChange" class="material-symbols-outlined green">
+            check_circle
+            </span>
+
+    <p>Add a letter to <b class="replace"></b> (anywhere) to make a new word</p>
+    <input id="add" type="text" value=""><span id="wrongAdd" class="material-symbols-outlined red">
+        cancel
+        </span><span id="correctAdd" class="material-symbols-outlined green">
+            check_circle
+            </span>
+
+    <p>Remove a letter form <b class="replace"></b> to make a new word</p>
+    <input id="remove" type="text" value=""><span id="wrongRemove" class="material-symbols-outlined red">
+        cancel
+        </span><span id="correctRemove" class="material-symbols-outlined green">
+            check_circle
+            </span>
+
+    <p>Create an anagram using at least 3 letters from <b class="replace"></b></p>
+    <input id="anagram" type="text" value=""><span id="wrongAnagram" class="material-symbols-outlined red">
+        cancel
+        </span><span id="correctAnagram" class="material-symbols-outlined green">
+            check_circle
+            </span>
+
+    <br>
+    <p><input type="button" id="submit" class="button" onclick="submit()" value="Check" /></p>
+
+</body>
+
+</html>
