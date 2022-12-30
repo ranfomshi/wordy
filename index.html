@@ -15,7 +15,8 @@
     <script src="animations.js" defer></script>
     <script src="wordy.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
     <title>Wordy</title>
@@ -26,41 +27,48 @@
 
     <h1 class="pageTitle">Wordy</h1>
 
-    <h3>Today's word:</h3>
+    <h5>Today's word:</h5>
+
     <div class="todayWordContainer">
         <h2 class="todayWord" id="todayWord"></h2>
     </div>
 
     <p>Change a letter of <b class="replace"></b> to make a new word</p>
-    <input id="change" type="text" value=""><span id="wrongChange" class="material-symbols-outlined red">
+    <input id="change" type="text" value=""><span id="wrongChange" class="material-symbols-outlined red indicator">
         cancel
-        </span><span id="correctChange" class="material-symbols-outlined green">
-            check_circle
-            </span>
+    </span><span id="correctChange" class="material-symbols-outlined green indicator">
+        check_circle
+    </span>
 
     <p>Add a letter to <b class="replace"></b> (anywhere) to make a new word</p>
-    <input id="add" type="text" value=""><span id="wrongAdd" class="material-symbols-outlined red">
+    <input id="add" type="text" value=""><span id="wrongAdd" class="material-symbols-outlined red indicator">
         cancel
-        </span><span id="correctAdd" class="material-symbols-outlined green">
-            check_circle
-            </span>
+    </span><span id="correctAdd" class="material-symbols-outlined green indicator">
+        check_circle
+    </span>
 
     <p>Remove a letter form <b class="replace"></b> to make a new word</p>
-    <input id="remove" type="text" value=""><span id="wrongRemove" class="material-symbols-outlined red">
+    <input id="remove" type="text" value=""><span id="wrongRemove" class="material-symbols-outlined red indicator">
         cancel
-        </span><span id="correctRemove" class="material-symbols-outlined green">
-            check_circle
-            </span>
+    </span><span id="correctRemove" class="material-symbols-outlined green indicator">
+        check_circle
+    </span>
 
     <p>Create an anagram using at least 3 letters from <b class="replace"></b></p>
-    <input id="anagram" type="text" value=""><span id="wrongAnagram" class="material-symbols-outlined red">
+    <input id="anagram" type="text" value=""><span id="wrongAnagram" class="material-symbols-outlined red indicator">
         cancel
-        </span><span id="correctAnagram" class="material-symbols-outlined green">
-            check_circle
-            </span>
+    </span><span id="correctAnagram" class="material-symbols-outlined green indicator">
+        check_circle
+    </span>
 
     <br>
     <p><input type="button" id="submit" class="button" onclick="submit()" value="Check" /></p>
+    <span class="material-symbols-outlined heart">
+        <div class="lives" id="lives">3</div>favorite
+    </span>
+    <span class="material-symbols-outlined streak">
+        <div class="lives" id="streak">0</div>crop_square
+    </span>
 
 </body>
 
