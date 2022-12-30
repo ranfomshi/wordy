@@ -18,12 +18,13 @@ body::-webkit-scrollbar {
   }
 
 body {
+    container-type: inline-size;
     margin: 10px 0px 10px 0px;
     padding: 0;
     height: -webkit-fill-available;
     position: fixed;
     top: 0;
-    width: 50vw;
+    width: 410px;
     left: 50%;
     transform: translateX(-50%);
     border: white 2px solid;
@@ -233,4 +234,11 @@ input {
         width: -webkit-fill-available;
         min-width: 100vw;
     }
+  }
+
+  @media only screen and (max-width: 450px) {
+    p {
+      font-size: small;
+    }
+    
   }
