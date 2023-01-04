@@ -16362,6 +16362,19 @@ function chooseWord(){
     x.innerHTML = randomWord
 }
 
+function sendEvent(category, action, label) {
+    if ("ga" in window) {
+        tracker = ga.getAll()[0];
+        if (tracker)
+            tracker.send("event", category, action, label);
+    }
+
+}
+
 function yes(){
-    
+    sendEvent("click", "yes", todayWord)
+}
+
+function no(){
+    sendEvent("click", "no", todayWord)
 }
