@@ -16356,10 +16356,12 @@ function init() {
     chooseWord()
 }
 
+var word = null
 function chooseWord() {
     x = document.getElementById('todayWord')
     const randomWord = library[Math.floor(Math.random() * library.length)];
     x.innerHTML = randomWord
+    word = randomWord
 }
 
 
@@ -16368,7 +16370,7 @@ function yes() {
 
 
     gtag('event', 'selection', {
-        'yes': todayWord
+        'yes': word
     });
     chooseWord()
 }
@@ -16377,7 +16379,7 @@ function no() {
  
 
     gtag('event', 'selection', {
-        'no': todayWord
+        'no': word
     });
     chooseWord()
 }
