@@ -16373,8 +16373,10 @@ function sendEvent(category, action, label) {
 
 function yes(){
     sendEvent("click", "yes", todayWord)
+    chooseWord()
 }
 
 function no(){
     sendEvent("click", "no", todayWord)
+    chooseWord()
 }
