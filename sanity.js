@@ -16376,7 +16376,7 @@ function yes() {
 function no() {
  
 
-    gtag('event', '<event_name>', {
+    gtag('event', 'selection', {
         'no': todayWord
     });
     chooseWord()
