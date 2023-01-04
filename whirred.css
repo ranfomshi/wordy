@@ -236,3 +236,11 @@ input {
     }
     
   }
+
+
+  .hidden{
+    height: 0px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+  }
