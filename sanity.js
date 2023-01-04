@@ -16352,31 +16352,32 @@ var library = [
     "spent"
 ]
 
-function init(){
+function init() {
     chooseWord()
 }
 
-function chooseWord(){
+function chooseWord() {
     x = document.getElementById('todayWord')
     const randomWord = library[Math.floor(Math.random() * library.length)];
     x.innerHTML = randomWord
 }
 
-function sendEvent(category, action, label) {
-    if ("ga" in window) {
-        tracker = ga.getAll()[0];
-        if (tracker)
-            tracker.send("event", category, action, label);
-    }
 
-}
 
-function yes(){
-    sendEvent("click", "yes", todayWord)
+function yes() {
+
+
+    gtag('event', '<event_name>', {
+        'yes': todayWord
+    });
     chooseWord()
 }
 
-function no(){
-    sendEvent("click", "no", todayWord)
+function no() {
+ 
+
+    gtag('event', '<event_name>', {
+        'no': todayWord
+    });
     chooseWord()
 }
