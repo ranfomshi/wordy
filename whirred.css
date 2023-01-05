@@ -244,3 +244,11 @@ input {
     color: white;
     overflow: hidden;
   }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 5px;
+    
+  }
