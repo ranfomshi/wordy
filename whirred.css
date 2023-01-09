@@ -51,10 +51,11 @@ input:focus-visible{
 }
 
 label{
-    visibility: hidden;
-    width: 0px;
-    overflow: hidden;
-    position: absolute;
+        /* visibility: hidden; */
+        width: 70px;
+        /* overflow: hidden; */
+        position: absolute;
+        color: transparent;
 }
 
 
