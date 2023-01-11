@@ -58,6 +58,11 @@ label{
         color: transparent;
 }
 
+.share{
+    display: none;
+    margin-top: 5px;
+}
+
 
 .material-symbols-outlined {
  
