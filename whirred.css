@@ -20,15 +20,12 @@ body::-webkit-scrollbar {
 
 body {
     background: linear-gradient(112deg,#f4008b 0%,#ff3f00 100%)!important;
-    margin: 10px 0px 10px 0px;
+    margin: auto;
     padding: 0;
     height: -webkit-fill-available;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 410px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: white 2px solid;
     text-align: center;
     min-width: 300px;
     min-height: 525px;
@@ -266,7 +263,7 @@ body>p{
   }
 
   .footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     margin: 0;
     padding: 5px;
